@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+	<head>
+		<script>
+			let multiply=(a,...b) =>
+			{				
+				if(Array.isArray(b))
+				{					
+					for(let i=0; i<b.length; i++)
+					{
+						if(!isNaN(a) && !isNaN(b[i]))
+						{							
+							a*=b[i];
+						}
+						else
+						{
+							console.log("Please provide a valid input");
+						}
+					}
+					return a;
+				}
+				else
+				{
+					return a*b;
+				}
+			}
+			let ans=multiply(2,2,3,'a',5);
+			console.log(ans);
+					
+		</script>
+	</head>
+	
+</html>

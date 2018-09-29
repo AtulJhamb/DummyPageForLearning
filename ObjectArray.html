@@ -1,0 +1,58 @@
+<!doctype html>	
+	<html>
+		<script>
+			var users=
+			{
+				"userInformation":[
+				{
+					"first_Name":"Atul",
+					"last_Name":"Jhamb",
+					"email_address":"someaddress@gmail.com",
+					"contact_number":"99999999"
+				},
+				{
+					"first_Name":"Aashu",
+					"last_Name":"Jhamb",
+					"email_address":"someaddress@gmail.com",
+					"contact_number":[
+					99999999,
+					8285031301]
+				},
+				{
+					"first_Name":"Tarun",
+					"last_Name":"Jhamb",
+					"email_address":"someaddress@gmail.com",
+					"contact_number":"99999999"
+				},
+				]
+			};			
+			var getData=function(name)
+			{
+				for(x in users.userInformation)
+				{
+					if(name==users.userInformation[x].first_Name)
+					{
+						var details=users.userInformation[x].contact_number;
+						alert(details);
+					}
+				}
+			}
+			getData("Aashu");
+			var employees=
+			{
+				"Name":"Atul",
+				"ID":"s1231",
+				"Roll_No":"sdafa"
+			}
+			/*
+			var userDetails="Hi "+users[0].first_Name+" "+users[0].last_Name;
+			alert(userDetails);
+			alert(employees.Name);
+			alert(typeof(userDetails));
+			alert(Array.isArray(users));
+			alert(Array.isArray(employees));
+			*/
+			
+		</script>
+		
+	</html>
